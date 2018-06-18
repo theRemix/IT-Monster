@@ -1,2 +1,2 @@
 # IT-Monster
-IT-Monster presentation
+IT Monster presentation
