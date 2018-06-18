@@ -80,7 +80,7 @@ export class Slide1 extends React.Component {
         </div>
 
         <img ref={this.gremlinPeek} className="gremlin-peek" src="./assets/gremlin-head.png" alt="gremlin peek" />
-        <img ref={this.gremlin} className="gremlin" src="./assets/grommet-gremlin-rockin.svg" alt="gremlin" />
+        <img ref={this.gremlin} className="gremlin" src="./assets/grommet-gremlin-rockin_v2.svg" alt="gremlin" />
     </div>;
   }
 }

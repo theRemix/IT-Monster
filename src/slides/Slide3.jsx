@@ -1,14 +1,14 @@
 import React from 'react';
 
 // Require CSS
-require('./slide1.css');
+require('./slide3.css');
 
 export class Slide3 extends React.Component {
 
 
   render() {
     return <div>
-      <h1>Slide 3 : Intentionally left blank</h1>
+      <img id="monster02" src="./assets/happy-dance.svg" />
     </div>;
   }
 }

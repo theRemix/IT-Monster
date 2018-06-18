@@ -72,7 +72,7 @@ export class Slide5 extends React.Component {
 
         </div>
 
-        <img ref={this.monster} className="monster" src="./assets/monster.png" alt="IT Monster" />
+        <img ref={this.monster} className="monster" src="./assets/worried.svg" alt="IT Monster" />
     </div>;
   }
 }

@@ -1,0 +1,7 @@
+#monster02 {
+  position: absolute;
+  bottom: 0;
+  height: 90vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
