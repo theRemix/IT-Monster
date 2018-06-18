@@ -8,6 +8,7 @@ export class Slide2 extends React.Component {
 
   render() {
     return <div>
+      <h1>Slide 2 : Intentionally left blank</h1>
     </div>;
   }
 }
