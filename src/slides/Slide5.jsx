@@ -26,14 +26,16 @@ export class Slide5 extends React.Component {
   }
 
   animate = timestamp => {
-    if(this.state.animating){
-      var stepDistance = ( this.distance.current.clientWidth / ( .52 * document.body.clientWidth ) * this.moonDistance );
-      this.label.current.innerText = stepDistance > this.moonDistance / 2 ? format(stepDistance) + " mi" : format(stepDistance);
-    } else {
-      this.label.current.innerText = format(this.moonDistance) + " mi";
-      this.monster.current.classList.add('monster-animate');
+    if(this.distance.current !== null && this.monster.current !== null && this.label.current !== null){
+      if(this.state.animating){
+        var stepDistance = ( this.distance.current.clientWidth / ( .52 * document.body.clientWidth ) * this.moonDistance );
+        this.label.current.innerText = stepDistance > this.moonDistance / 2 ? format(stepDistance) + " mi" : format(stepDistance);
+        window.requestAnimationFrame(this.animate);
+      } else {
+        this.label.current.innerText = format(this.moonDistance) + " mi";
+        this.monster.current.classList.add('monster-animate');
+      }
     }
-    window.requestAnimationFrame(this.animate);
   }
 
   setAnimating = () => {

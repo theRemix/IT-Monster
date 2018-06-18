@@ -27,19 +27,21 @@ export class Slide1 extends React.Component {
   }
 
   animate = timestamp => {
-    if(this.state.animating){
-      var stepDistance = ( this.distance.current.clientWidth / ( .52 * document.body.clientWidth ) * this.moonDistance );
-      if(stepDistance > this.moonDistance / 2){
-        this.label.current.innerText = NaN;
-        // @bad
-        this.gremlinPeek.current.classList.add('gremlin-peek-animate');
-        this.gremlin.current.classList.add('gremlin-animate');
+    if(this.distance.current !== null && this.label.current !== null){
+      if(this.state.animating){
+        var stepDistance = ( this.distance.current.clientWidth / ( .52 * document.body.clientWidth ) * this.moonDistance );
+        if(stepDistance > this.moonDistance / 2){
+          this.label.current.innerText = NaN;
+          // @bad
+          this.gremlinPeek.current.classList.add('gremlin-peek-animate');
+          this.gremlin.current.classList.add('gremlin-animate');
+        } else {
+          this.label.current.innerText = format(stepDistance);
+        }
+        window.requestAnimationFrame(this.animate);
       } else {
-        this.label.current.innerText = format(stepDistance);
+        this.label.current.innerText = NaN;
       }
-      window.requestAnimationFrame(this.animate);
-    } else {
-      this.label.current.innerText = NaN;
     }
   }
 
@@ -58,6 +60,7 @@ export class Slide1 extends React.Component {
   }
 
   componentWillUnmount(){
+    this.setNotAnimating(); // stop the loop
     this.distance.current.removeEventListener('animationstart', this.setAnimating);
     this.distance.current.removeEventListener('animationend', this.setNotAnimating);
   }
