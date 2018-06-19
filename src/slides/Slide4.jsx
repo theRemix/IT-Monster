@@ -7,7 +7,11 @@ export class Slide4 extends React.Component {
   render() {
     return (
       <div>
-        <img id="monster04" src="./assets/monster_worried.svg" />
+        <img
+          id="monster04"
+          src="./assets/monster_worried.svg"
+          alt="Worried looking IT Monster"
+        />
       </div>
     );
   }
