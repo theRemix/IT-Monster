@@ -3,7 +3,15 @@ import React from 'react';
 
 // Import Spectacle Core tags
 import { Deck } from 'spectacle';
-import { Slide1, Slide2, Slide3, Slide4, Slide5, Slide6 } from './slides';
+import {
+  Slide1,
+  Slide2,
+  Slide3,
+  Slide4,
+  Slide5,
+  Slide6,
+  Slide7,
+} from './slides';
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
@@ -38,6 +46,7 @@ export default class Presentation extends React.Component {
         <Slide4 transition={['fade']} bgColor="primary" />
         <Slide5 transition={['fade']} bgColor="primary" />
         <Slide6 transition={['fade']} bgColor="primary" />
+        <Slide7 transition={['fade']} bgColor="primary" />
       </Deck>
     );
   }
