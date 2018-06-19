@@ -3,7 +3,7 @@ import React from 'react';
 export default class HappyStack extends React.Component {
   render() {
     return (
-      <svg id="gremlin" width="730" height="730" viewBox="0 0 730 700">
+      <svg id="gremlin" width="730" height="730" viewBox="0 0 730 600">
         <g id="body">
           <g id="shoulder">
             <path
