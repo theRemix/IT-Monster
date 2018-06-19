@@ -1,0 +1,84 @@
+#gremlin {
+  transform: translate(0px, 12px);
+}
+#shoulder {
+  transform-origin: 380px 492px;
+  animation: shoulder 2s ease-in-out infinite;
+  position: relative;
+}
+#forearm {
+  transform-origin: 148px 382px;
+  animation: elbow 2s ease-in-out infinite;
+  position: relative;
+}
+#hand {
+  transform-origin: 166px 166px;
+  animation: wrist 2s ease-in-out infinite;
+  position: relative;
+}
+#brow {
+  transform-origin: 490px 210px;
+  animation: scrunch 6s ease-in-out infinite;
+  position: relative;
+}
+#ear {
+  transform-origin: 576px 168px;
+  animation: scrunch 4s ease-in-out infinite;
+  position: relative;
+}
+#body {
+  transform-origin: 450px 712px;
+  animation: sway 2s ease-in-out infinite;
+  position: relative;
+}
+#anchor {
+  transform-origin: 596px 552px;
+  position: absolute;
+}
+@keyframes shoulder {
+  50% {
+    transform: rotate(24deg);
+  }
+}
+@keyframes elbow {
+  50% {
+    transform: rotate(14deg);
+  }
+}
+@keyframes wrist {
+  50% {
+    transform: rotate(8deg);
+  }
+}
+@keyframes sway {
+  50% {
+    transform: rotate(1deg);
+  }
+}
+@keyframes scrunch {
+  0%,
+  71% {
+    transform: translateY(4px);
+  }
+  72%,
+  73% {
+    transform: translateY(-4px);
+  }
+  74%,
+  100% {
+    transform: translateY(4px);
+  }
+}
+@keyframes wiggle {
+  0%,
+  23% {
+    transform: rotate(-4deg);
+  }
+  24%,
+  100% {
+    transform: rotate(4deg);
+  }
+}
+svg {
+  width: 100%;
+}
