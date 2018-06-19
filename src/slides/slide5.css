@@ -1,7 +1,7 @@
 #monster05 {
   position: absolute;
-  bottom: 0;
+  bottom: -12vh;
   left: 50%;
   transform: translateX(-50%);
-  height: 75vh;
+  height: 150vh;
 }
