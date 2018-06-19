@@ -1,3 +1,112 @@
+body {
+  overflow: hidden;
+}
+
+.wrapper {
+  color: #000;
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI',
+    'Fira Sans', Avenir, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #898989;
+  font-size: 5vw;
+  font-weight: 500;
+}
+
+.container {
+  width: 80vw;
+  margin: auto;
+  margin-top: 10vw;
+  text-align: center;
+}
+
+.earth,
+.moon {
+  border: 0.5vw solid #6fd2e8;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 9vw;
+  text-align: center;
+  display: inline-block;
+}
+
+.earth span,
+.moon span {
+  font-family: 'Helvetica', sans-serif;
+  color: #6fd2e8;
+  font-weight: 700;
+  line-height: 15vw;
+  font-size: 2vw;
+}
+
+.distance {
+  border-top: 0.3vw dashed #aaa;
+  margin: 0 1vw;
+  display: inline-block;
+  width: 0;
+  transform: translateY(1.8vw);
+
+  animation-duration: 5s;
+  animation-name: distance;
+  animation-fill-mode: forwards;
+}
+
+.distance-label {
+  font-family: 'Helvetica', sans-serif;
+  color: #898989;
+  font-weight: 700;
+  font-size: 3vw;
+  text-align: center;
+
+  display: block;
+  width: 100%;
+  transform: translateY(-5vw);
+}
+
+.moon {
+  border-color: #aaa;
+  width: 8vw;
+  height: 8vw;
+}
+
+.moon span {
+  color: #aaa;
+  line-height: 8vw;
+}
+
+@keyframes distance {
+  from {
+    width: 8vw;
+  }
+
+  to {
+    width: 49vw;
+  }
+}
+
+.monster {
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 70vh;
+
+  transition: bottom 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: bottom 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.monster-animate {
+  bottom: -10vh;
+}
+
 #gremlin {
   transform: translate(0px, 12px);
 }
@@ -82,3 +191,4 @@
 svg {
   width: 100%;
 }
+
