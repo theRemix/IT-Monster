@@ -4,12 +4,11 @@ import React from 'react';
 require('./slide3.css');
 
 export class Slide3 extends React.Component {
-
-
   render() {
-    return <div>
-      <img id="monster02" src="./assets/happy-dance.svg" />
-    </div>;
+    return (
+      <div>
+        <img id="monster03" src="./assets/monster_dance_dab.svg" />
+      </div>
+    );
   }
 }
-
