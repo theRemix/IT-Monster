@@ -12,5 +12,4 @@ To start the project, run:
   $ npm start
 ```
 
-Example hosted at https://theremix.github.io/IT-Monster/
-- Use your left and right arrow keys to navigate through the slides
+Use your left and right arrow keys to navigate through the slides
