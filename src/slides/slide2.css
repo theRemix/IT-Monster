@@ -3,3 +3,53 @@
   bottom: 0;
   height: 80vh;
 }
+
+.earth-static,
+.moon-static {
+  border: 0.5vw solid #6fd2e8;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 9vw;
+  text-align: center;
+  display: inline-block;
+}
+
+.earth-static span,
+.moon-static span {
+  font-family: 'Helvetica', sans-serif;
+  color: #6fd2e8;
+  font-weight: 700;
+  line-height: 15vw;
+  font-size: 2vw;
+}
+
+.distance-static {
+  border-top: 0.3vw dashed #aaa;
+  margin: 0 1vw;
+  display: inline-block;
+  transform: translateY(1.8vw);
+  width: 49vw;
+}
+
+.distance-label-static {
+  font-family: 'Helvetica', sans-serif;
+  color: #898989;
+  font-weight: 700;
+  font-size: 3vw;
+  text-align: center;
+
+  display: block;
+  width: 100%;
+  transform: translateY(-5vw);
+}
+
+.moon-static {
+  border-color: #aaa;
+  width: 8vw;
+  height: 8vw;
+}
+
+.moon-static span {
+  color: #aaa;
+  line-height: 8vw;
+}
