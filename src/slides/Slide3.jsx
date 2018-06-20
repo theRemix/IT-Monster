@@ -6,7 +6,7 @@ require('./slide3.css');
 export class Slide3 extends React.Component {
   render() {
     return (
-      <div class="wrapper">
+      <div className="wrapper">
         <h1>Current Distance to the Moon</h1>
         <div className="container">
           <div className="earth-static">
