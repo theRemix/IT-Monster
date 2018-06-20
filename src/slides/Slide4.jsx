@@ -20,9 +20,9 @@ export class Slide4 extends React.Component {
           </div>
         </div>
         <img
-          id="monster04"
-          src="./assets/monster_worried.svg"
-          alt="Worried looking IT Monster"
+          id="monster03"
+          src="./assets/monster_dance_dab.svg"
+          alt="Dancing Dabbing IT Monster"
         />
       </div>
     );

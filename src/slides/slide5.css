@@ -1,7 +1,6 @@
-#monster05 {
+#monster04 {
   position: absolute;
-  bottom: -12vh;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 150vh;
+  bottom: 0;
+  right: 0;
+  height: 85vh;
 }

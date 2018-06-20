@@ -2,7 +2,7 @@ import React from 'react';
 import HappyStack from '../components/HappyStack';
 
 // Require CSS
-require('./slide7.css');
+require('./slide8.css');
 
 function format(float) {
   return float
@@ -17,7 +17,7 @@ function format(float) {
     }, '');
 }
 
-export class Slide7 extends React.Component {
+export class Slide8 extends React.Component {
   state = {
     animating: false,
   };

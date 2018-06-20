@@ -1,11 +1,35 @@
-#monster02 {
-  position: absolute;
-  bottom: 0;
-  height: 80vh;
+body {
+  overflow: hidden;
 }
 
-.earth-static,
-.moon-static {
+.wrapper {
+  color: #000;
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI',
+    'Fira Sans', Avenir, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #898989;
+  font-size: 5vw;
+  font-weight: 500;
+}
+
+.container {
+  width: 80vw;
+  margin: auto;
+  margin-top: 10vw;
+  text-align: center;
+}
+
+.earth,
+.moon {
   border: 0.5vw solid #6fd2e8;
   width: 15vw;
   height: 15vw;
@@ -14,8 +38,8 @@
   display: inline-block;
 }
 
-.earth-static span,
-.moon-static span {
+.earth span,
+.moon span {
   font-family: 'Helvetica', sans-serif;
   color: #6fd2e8;
   font-weight: 700;
@@ -23,15 +47,19 @@
   font-size: 2vw;
 }
 
-.distance-static {
+.distance {
   border-top: 0.3vw dashed #aaa;
   margin: 0 1vw;
   display: inline-block;
+  width: 0;
   transform: translateY(1.8vw);
-  width: 49vw;
+
+  animation-duration: 6s;
+  animation-name: distance;
+  animation-fill-mode: forwards;
 }
 
-.distance-label-static {
+.distance-label {
   font-family: 'Helvetica', sans-serif;
   color: #898989;
   font-weight: 700;
@@ -43,13 +71,76 @@
   transform: translateY(-5vw);
 }
 
-.moon-static {
+.moon {
   border-color: #aaa;
   width: 8vw;
   height: 8vw;
 }
 
-.moon-static span {
+.moon span {
   color: #aaa;
   line-height: 8vw;
+}
+
+@keyframes distance {
+  from {
+    width: 8vw;
+  }
+
+  to {
+    width: 30vw;
+  }
+}
+
+.gremlin-peek {
+  position: absolute;
+  width: 10%;
+  transform: rotate(180deg);
+
+  left: 25%;
+  top: -100%;
+}
+
+.gremlin-peek-animate {
+  animation-duration: 3s;
+  animation-name: peek;
+  animation-fill-mode: forwards;
+}
+
+@keyframes peek {
+  0% {
+    top: -100%;
+  }
+  30% {
+    top: 0px;
+  }
+  70% {
+    top: 0px;
+  }
+  100% {
+    top: -100%;
+  }
+}
+
+.gremlin {
+  position: absolute;
+  width: 40vw;
+  bottom: -100%;
+}
+
+.gremlin-animate {
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+  from {
+    bottom: -100%;
+  }
+
+  to {
+    bottom: 0px;
+  }
 }

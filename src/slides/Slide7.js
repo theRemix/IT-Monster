@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class Slide6 extends React.Component {
+export class Slide7 extends React.Component {
   render() {
     return (
       <div className="wrapper">

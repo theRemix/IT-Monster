@@ -1,9 +1,9 @@
 import React from 'react';
 
 // Require CSS
-require('./slide5.css');
+require('./slide6.css');
 
-export class Slide5 extends React.Component {
+export class Slide6 extends React.Component {
   render() {
     return (
       <div className="wrapper">
@@ -20,9 +20,9 @@ export class Slide5 extends React.Component {
           </div>
         </div>
         <img
-          id="monster04"
-          src="./assets/monster_worried.svg"
-          alt="Worried looking IT Monster"
+          id="monster05"
+          src="./assets/monster_explodes.svg"
+          alt="IT monster explodes"
         />
       </div>
     );

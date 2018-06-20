@@ -11,6 +11,7 @@ import {
   Slide5,
   Slide6,
   Slide7,
+  Slide8,
 } from './slides';
 
 // Import theme
@@ -47,6 +48,7 @@ export default class Presentation extends React.Component {
         <Slide5 transition={['fade']} bgColor="primary" />
         <Slide6 transition={['fade']} bgColor="primary" />
         <Slide7 transition={['fade']} bgColor="primary" />
+        <Slide8 transition={['fade']} bgColor="primary" />
       </Deck>
     );
   }

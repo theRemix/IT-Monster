@@ -97,18 +97,18 @@ h1 {
   bottom: -100%;
   left: 50%;
   transform: translateX(-50%);
-  height: 70vh;
 
   transition: bottom 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -webkit-transition: bottom 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .monster-animate {
-  bottom: -10vh;
+  bottom: -20vh;
 }
 
 #gremlin {
   transform: translate(0px, 12px);
+  width: 30vw;
 }
 #shoulder {
   transform-origin: 380px 492px;
@@ -188,7 +188,3 @@ h1 {
     transform: rotate(4deg);
   }
 }
-svg {
-  width: 80%;
-}
-
