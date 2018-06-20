@@ -94,7 +94,7 @@ h1 {
 
 .gremlin-peek {
   position: absolute;
-  width: 10%;
+  width: 13vw;
   transform: rotate(180deg);
 
   left: 25%;
